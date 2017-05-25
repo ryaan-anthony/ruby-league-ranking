@@ -1,10 +1,10 @@
 module LeagueRankings
-  # A data model for teams
-  class Team
+  # A data model for league teams
+  class LeagueTeam < Team
     include Awardable
-    attr_accessor :name, :overall_score
+    attr_accessor :overall_score
     def initialize(args)
-      @name = args[:name]
+      super(args)
       @overall_score = args[:overall_score] || 0
     end
   end

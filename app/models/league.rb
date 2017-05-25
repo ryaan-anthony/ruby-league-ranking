@@ -15,7 +15,7 @@ module LeagueRankings
     end
 
     def team_by_name(team_name)
-      @teams[team_name] ||= Team.new(name: team_name)
+      @teams[team_name] ||= LeagueTeam.new(name: team_name)
     end
   end
 end

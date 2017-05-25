@@ -26,20 +26,20 @@ module LeagueRankings
 
     def parse_result(away_team, home_team)
       GameResults.new(
-        away_name: away_team[:name],
-        away_score: away_team[:score],
-        home_name: home_team[:name],
-        home_score: home_team[:score]
+        away_name: away_team.name,
+        away_score: away_team.score,
+        home_name: home_team.name,
+        home_score: home_team.score
       )
     end
 
     def parse_team(team)
       name = team[/(.*) /, 1]
       score = team.split.last.to_i
-      {
+      GameTeam.new(
         name: name,
         score: score
-      }
+      )
     end
   end
 end
