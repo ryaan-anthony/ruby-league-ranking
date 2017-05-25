@@ -1,5 +1,5 @@
 namespace :league_ranking do
-  desc 'Calculate league ranking from standings'
+  desc 'Calculate league ranking from game results'
   task :calculate do
     league = LeagueRankings::League.new
     game_results = LeagueRankings::ParseGameResults.new.call
