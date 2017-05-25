@@ -8,7 +8,7 @@ module LeagueRankings
 
     def call
       game_results = []
-      @input.each_line do |line|
+      @input.each do |line|
         result = parse_line(line)
         game_results.push(result)
       end
