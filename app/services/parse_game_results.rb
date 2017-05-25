@@ -21,10 +21,6 @@ module LeagueRankings
       teams = line.split(',').map!(&:strip)
       away_team = parse_team(teams[0])
       home_team = parse_team(teams[1])
-      parse_result(away_team, home_team)
-    end
-
-    def parse_result(away_team, home_team)
       GameResults.new(
         away_name: away_team.name,
         away_score: away_team.score,
