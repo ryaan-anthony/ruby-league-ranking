@@ -1,6 +1,8 @@
 Ruby League Ranking
 ===========================================
 
+[![CircleCI](https://circleci.com/gh/ryaan-anthony/ruby-league-ranking/tree/master.svg?style=svg)](https://circleci.com/gh/ryaan-anthony/ruby-league-ranking/tree/master)
+
 Example usage
 ---------
 `rake league_ranking:calculate < sample-input.txt` 
