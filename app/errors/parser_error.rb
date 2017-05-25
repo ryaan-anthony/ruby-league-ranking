@@ -1,0 +1,1 @@
+class ParserError < RuntimeError; end
